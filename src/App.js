@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import GlobalStyle from './styles/global';
+
+import Main from './pages/Main/index';
 
 const App = () => (
-  <div className="App">
-    <h1>Hello World!</h1>
-  </div>
+  <Fragment>
+    <GlobalStyle />
+    <div className="App">
+      <Main />
+    </div>
+  </Fragment>
 );
 
 // comment
